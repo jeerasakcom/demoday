@@ -9,6 +9,7 @@ import { BackendLayoutComponent } from './layouts/backend-layout/backend-layout.
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/backend/dashboard/dashboard.component';
+import { ProductComponent } from './pages/frontend/product/product.component';
 
 const routes: Routes = [
   // Route สำหรับเรียกหน้า Frontend Layout
@@ -25,6 +26,10 @@ const routes: Routes = [
        path: 'about',
        component: AboutComponent,
      },
+     {
+      path: 'product',
+      component: ProductComponent,
+    },
      {
       path: 'payment',
       component: PaymentComponent,

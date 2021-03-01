@@ -25,6 +25,7 @@ import { SidebarComponent } from './shared/backend/sidebar/sidebar.component';
 import { BackendLayoutComponent } from './layouts/backend-layout/backend-layout.component';
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
+import { ProductComponent } from './pages/frontend/product/product.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { LoginLayoutComponent } from './layouts/login-layout/login-layout.compon
     BackendLayoutComponent,
     FrontendLayoutComponent,
     LoginLayoutComponent,
+    ProductComponent,
 
   ],
   imports: [

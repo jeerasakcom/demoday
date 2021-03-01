@@ -1,13 +1,35 @@
-.map-container-5{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
-    .map-container-5 iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
+@import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+h1 {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+
+.map-container-5 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-5 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
