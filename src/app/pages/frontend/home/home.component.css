@@ -1,8 +1,23 @@
 @import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
 
 h2 {
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: #004a8f;
-  }
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #004a8f;
+}
+
+h3 {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff2a4d;
+}
+
+
+h4 {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #003cff;
+}

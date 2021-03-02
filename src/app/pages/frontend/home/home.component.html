@@ -1,52 +1,69 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/rice001.jpg" class="d-block w-100" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/rice002.jpg" class="d-block w-100" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/rice003.jpg" class="d-block w-100" alt="Third slide">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
   </div>
-  <br>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="assets/img/rice001.jpg" class="d-block w-100" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>ในทุกๆมื้อ อาหารที่ขาดไม่ได้ที่ต้องทานคู่กับกับข้าวอร่อยๆ</h3>
+        <h3>คือ ข้าวสวยร้อนๆ หอมๆ นุ่มๆ เต็มปากเต็มคำ</h3>
+        <img src="../../../assets/img/logo.png" alt="logo" width="50" height="50">
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="assets/img/rice002.jpg" class="d-block w-100" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>ส่งต่อความรักความห่วงใยผ่านอาหารทุกมื้อด้วยข้าวคุณภาพดี</h4>
+        <img src="../../../assets/img/logo.png" alt="logo" width="50" height="50">
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="assets/img/rice003.jpg" class="d-block w-100" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>ข้าวหอมมะลิคุณภาพ ที่ผ่านการคัดสรรวัตถุดิบ จากข้าวหอมมะลิพันธุ์ดี จากแหล่งที่ดีที่สุด การันตีความอร่อย </h4>
+        <img src="../../../assets/img/logo.png" alt="logo" width="50" height="50">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
 
-  <div class="container">
-		<div class="row">
-          	<div class="col-lg-4 text-center mb-5">
-            		<img src="assets/img/bg2.jpg" width="160" height="160">
-            		<h2>ความรู้เกี่ยวกับ "ข้าว"</h2>
-            		<p class="mx-4">ข้าวหอมมะลิถือเป็นสัญลักษณ์หนึ่งของประเทศไทย ที่คนทั่วโลกรู้จักตั้งแต่อดีตจนถึงปัจจุบัน</p>
-            		<p class="mx-4"><a class="btn btn-secondary" routerLink="about" role="button">View details &raquo;</a></p>
-          	</div>
-		   
-          	<div class="col-lg-4 text-center mb-5">
-            		<img src="assets/img/bg3.jpg" width="160" height="160">
-                <h2>สินค้า/ผลิตภัณฑ์</h2>
-            		<p class="mx-4">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-            		<p class="mx-4"><a class="btn btn-secondary" routerLink="product" role="button">View details &raquo;</a></p>
-         	 	</div>
-		   
-          	<div class="col-lg-4 text-center mb-5">
-                <img src="assets/img/bg4.jpg" width="160" height="160">
-            		<h2>สนใจร่วมลงทุน</h2>
-            		<p class="mx-4">การลงทุนมีความเสี่ยง ผู้ลงทุนควรศึกษาข้อมูลก่อนการตัดสินใจลงทุน</p>
-            		<p class="mx-4"><a class="btn btn-secondary" routerLink="contact" role="button">อ่านเพิ่มเติม &raquo;</a></p>
-          	</div>
-		</div>
-	</div>  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 text-center mb-5">
+      <img src="assets/img/bg2.jpg" width="160" height="160">
+      <h2>ความรู้เกี่ยวกับ "ข้าว"</h2>
+      <p class="mx-4">ข้าวหอมมะลิถือเป็นสัญลักษณ์หนึ่งของประเทศไทย ที่คนทั่วโลกรู้จักตั้งแต่อดีตจนถึงปัจจุบัน</p>
+      <p class="mx-4"><a class="btn btn-success" routerLink="about" role="button">อ่านเพิ่มเติม &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-4 text-center mb-5">
+      <img src="assets/img/bg3.jpg" width="160" height="160">
+      <h2>สินค้า/ผลิตภัณฑ์</h2>
+      <p class="mx-4">ข้าวขาว ข้าวหอมประทุม ข้าวหอมมะลิ ข้าวกล้อง ข้าวไรซ์เบอรรี่ <strong
+          style="color: red;">**ส่งฟรีเฉพาะในกรุงเทพฯและปริมณฑลเท่านั้น**</strong></p>
+      <p class="mx-4"><a class="btn btn-success" routerLink="product" role="button">เลือกสินค้า &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-4 text-center mb-5">
+      <img src="assets/img/bg4.jpg" width="160" height="160">
+      <h2>สนใจร่วมลงทุน</h2>
+      <p class="mx-4">การลงทุนมีความเสี่ยง ผู้ลงทุนควรศึกษาข้อมูลก่อนการตัดสินใจลงทุน</p>
+      <p class="mx-4"><a class="btn btn-success" routerLink="contact" role="button">อ่านเพิ่มเติม &raquo;</a></p>
+    </div>
+  </div>
+</div>
