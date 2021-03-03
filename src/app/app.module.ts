@@ -26,6 +26,7 @@ import { BackendLayoutComponent } from './layouts/backend-layout/backend-layout.
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 import { ProductComponent } from './pages/frontend/product/product.component';
+import { InformationComponent } from './pages/frontend/information/information.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ProductComponent } from './pages/frontend/product/product.component';
     FrontendLayoutComponent,
     LoginLayoutComponent,
     ProductComponent,
+    InformationComponent,
 
   ],
   imports: [

@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+body {
+  font-family: 'Kanit', sans-serif;
+  
+}
+
+h1 {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+h2,h3 {
+  font-family: 'Prompt', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div.p {
+  text-indent: 100px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
