@@ -1,3 +1,4 @@
+import { ListsProductsComponent } from './components/lists-products/lists-products.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { AddProductsComponent } from './components/add-products/add-products.component';
 import { StockComponent } from './pages/backend/stock/stock.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
           {
             path: "list",
             component: ListProductsComponent,
+          },
+          {
+            path: "lists",
+            component: ListsProductsComponent,
           },
 
         ],

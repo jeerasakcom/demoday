@@ -34,6 +34,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddProductsComponent } from './components/add-products/add-products.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { DetailsProductsComponent } from './components/details-products/details-products.component';
+import { ListsProductsComponent } from './components/lists-products/lists-products.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { DetailsProductsComponent } from './components/details-products/details-
     AddProductsComponent,
     ListProductsComponent,
     DetailsProductsComponent,
+    ListsProductsComponent,
 
   ],
   imports: [
