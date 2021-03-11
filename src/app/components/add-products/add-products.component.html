@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <!-- Breadcrumbs-->
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a>Stock</a>
+    </li>
+    <li class="breadcrumb-item active">Add Products</li>
+  </ol>
+
+  <div class="card border-success mb-3" style="max-width: 25%;">
+    <div class="card-header">Add Products</div>
+    <div class="card-body text-success">
+      <div class="submit-form">
+        <div *ngIf="!submitted">
+          <div class="form-group">
+            <label for="product_name">Name</label>
+            <input type="text" class="form-control" id="product_name" required [(ngModel)]="Products.product_name"
+              name="product_name" />
+          </div>
+
+          <div class="form-group">
+            <label for="product_details">Details</label>
+            <input class="form-control" id="product_details" required [(ngModel)]="Products.product_details"
+              name="product_details" />
+          </div>
+
+          <div class="form-group">
+            <label for="product_price">Prices</label>
+            <input class="form-control" id="product_price" required [(ngModel)]="Products.product_price"
+              name="product_price" />
+          </div>
+
+          <div class="form-group">
+            <label for="product_quantity">Quanity</label>
+            <input class="form-control" id="product_quantity" required [(ngModel)]="Products.product_quantity"
+              name="product_quantity" />
+          </div>
+
+          <div class="text-center">
+            <button (click)="saveProducts()" class="btn btn-success">Submit</button>
+          </div>
+
+        </div>
+
+        <div *ngIf="submitted">
+          <h4>You submitted successfully!</h4>
+
+          <div class="text-center">
+            <button class="btn btn-success" (click)="newProducts()">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +30,10 @@ import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layo
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 import { ProductComponent } from './pages/frontend/product/product.component';
 import { InformationComponent } from './pages/frontend/information/information.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddProductsComponent } from './components/add-products/add-products.component';
+import { ListProductsComponent } from './components/list-products/list-products.component';
+import { DetailsProductsComponent } from './components/details-products/details-products.component';
 
 @NgModule({
   declarations: [
@@ -51,13 +58,20 @@ import { InformationComponent } from './pages/frontend/information/information.c
     LoginLayoutComponent,
     ProductComponent,
     InformationComponent,
+    AddProductsComponent,
+    ListProductsComponent,
+    DetailsProductsComponent,
 
   ],
   imports: [
     HttpClientModule,
-    FormsModule, 
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // for firestore
   ],
   providers: [],
   bootstrap: [AppComponent]

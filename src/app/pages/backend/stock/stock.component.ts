@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StockComponent implements OnInit {
 
+  title = 'productdb';
+
   constructor() { }
 
   ngOnInit(): void {

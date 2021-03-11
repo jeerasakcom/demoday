@@ -1,3 +1,6 @@
+import { ListProductsComponent } from './components/list-products/list-products.component';
+import { AddProductsComponent } from './components/add-products/add-products.component';
+import { StockComponent } from './pages/backend/stock/stock.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
@@ -14,59 +17,77 @@ import { InformationComponent } from './pages/frontend/information/information.c
 
 const routes: Routes = [
   // Route สำหรับเรียกหน้า Frontend Layout
- {
-   path:'',
-   component: FrontendLayoutComponent,
-   children:[
-     {
-       path: "",
-       component: HomeComponent,
-       pathMatch: 'full'
-     },
-     {
-       path: 'about',
-       component: AboutComponent,
-     },
-     {
-      path: 'info',
-      component: InformationComponent,
-    },
-     {
-      path: 'product',
-      component: ProductComponent,
-    },
-     {
-      path: 'payment',
-      component: PaymentComponent,
-    },
-     {
-       path: 'contact',
-       component: ContactComponent,
-     }
-   ]
- },
- // Route สำหรับเรียกหน้า Backend Layout
- {
-   path:'backend',
-   component: BackendLayoutComponent,
-   children:[
-     {
-       path: "",
-       component: DashboardComponent
-     }
-   ]
- },
- // Route สำหรับเรียกหน้า Login/Register Layout
- {
-   path:'login',
-   component: LoginLayoutComponent,
-   children:[
-     {
-       path: "",
-       component: LoginComponent,
-     }
-   ]
- }
+  {
+    path: '',
+    component: FrontendLayoutComponent,
+    children: [
+      {
+        path: "",
+        component: HomeComponent,
+        pathMatch: 'full'
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
+      },
+      {
+        path: 'info',
+        component: InformationComponent,
+      },
+      {
+        path: 'product',
+        component: ProductComponent,
+      },
+      {
+        path: 'payment',
+        component: PaymentComponent,
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
+      }
+    ]
+  },
+  // Route สำหรับเรียกหน้า Backend Layout
+  {
+    path: 'backend',
+    component: BackendLayoutComponent,
+    children: [
+      {
+        path: "",
+        component: DashboardComponent,
+      },
+      {
+        path: "stock",
+        component: StockComponent,
+        children: [
+          {
+            path: "", redirectTo: 'stock', pathMatch: 'full'
+          },
+          {
+            path: "add",
+            component: AddProductsComponent,
+          },
+          {
+            path: "list",
+            component: ListProductsComponent,
+          },
+
+        ],
+      }
+    ]
+  },
+  // Route สำหรับเรียกหน้า Login/Register Layout
+  {
+    path: 'login',
+    component: LoginLayoutComponent,
+    children: [
+      {
+        path: "",
+        component: LoginComponent,
+      }
+    ]
+  }
 ];
 
 @NgModule({
