@@ -35,6 +35,7 @@ import { AddProductsComponent } from './components/add-products/add-products.com
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { DetailsProductsComponent } from './components/details-products/details-products.component';
 import { ListsProductsComponent } from './components/lists-products/lists-products.component';
+import { AddCustomersComponent } from './components/add-customers/add-customers.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ListsProductsComponent } from './components/lists-products/lists-produc
     ListProductsComponent,
     DetailsProductsComponent,
     ListsProductsComponent,
+    AddCustomersComponent,
 
   ],
   imports: [

@@ -1,3 +1,4 @@
+import { AddCustomersComponent } from './components/add-customers/add-customers.component';
 import { ListsProductsComponent } from './components/lists-products/lists-products.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { AddProductsComponent } from './components/add-products/add-products.component';
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponent,
+      },
+      {
+        path: 'register',
+        component: AddCustomersComponent,
       }
     ]
   },
