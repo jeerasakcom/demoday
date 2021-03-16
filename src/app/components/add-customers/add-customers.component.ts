@@ -1,6 +1,7 @@
 import { CustomersService } from './../../services/customers.service';
 import { Customers } from './../../models/customers.model';
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-add-customers',
@@ -15,6 +16,14 @@ export class AddCustomersComponent implements OnInit {
   constructor(private CustomersService: CustomersService) { }
 
   ngOnInit(): void {
+  }
+
+  // ปุ่มบันทึกสำเร็จ
+  alertWithSuccess() {
+    this.CustomersService.create(this.Customers).then(() => {
+      Swal.fire('Success', 'บันทึกข้อมูลสำเร็จค่ะ', 'success');
+      this.submitted = true;
+    });
   }
 
   saveCustomers(): void {
