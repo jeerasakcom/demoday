@@ -16,6 +16,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/backend/dashboard/dashboard.component';
 import { ProductComponent } from './pages/frontend/product/product.component';
 import { InformationComponent } from './pages/frontend/information/information.component';
+import { ReportComponent } from './pages/backend/report/report.component';
 
 const routes: Routes = [
   // Route สำหรับเรียกหน้า Frontend Layout
@@ -64,6 +65,10 @@ const routes: Routes = [
         component: DashboardComponent,
       },
       {
+        path: "dashboard",
+        component: DashboardComponent,
+      },
+      {
         path: "stock",
         component: StockComponent,
         children: [
@@ -84,7 +89,11 @@ const routes: Routes = [
           },
 
         ],
-      }
+      },
+      {
+        path: "report",
+        component: ReportComponent,
+      },
     ]
   },
   // Route สำหรับเรียกหน้า Login/Register Layout

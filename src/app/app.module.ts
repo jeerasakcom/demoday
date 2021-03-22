@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+
+
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +38,7 @@ import { ListProductsComponent } from './components/list-products/list-products.
 import { DetailsProductsComponent } from './components/details-products/details-products.component';
 import { ListsProductsComponent } from './components/lists-products/lists-products.component';
 import { AddCustomersComponent } from './components/add-customers/add-customers.component';
+
 
 @NgModule({
   declarations: [
@@ -76,6 +79,8 @@ import { AddCustomersComponent } from './components/add-customers/add-customers.
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // for firestore
+    ReactiveFormsModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,32 +13,32 @@
       <div class="submit-form">
         <div *ngIf="!submitted">
           <div class="form-group">
-            <label for="product_name">Name</label>
+            <label for="product_name">ชื่อสินค้า</label>
             <input type="text" class="form-control" id="product_name" required [(ngModel)]="Products.product_name"
               name="product_name" />
           </div>
 
           <div class="form-group">
-            <label for="product_details">Details</label>
+            <label for="product_details">รายละเอียดสินค้า</label>
             <input class="form-control" id="product_details" required [(ngModel)]="Products.product_details"
               name="product_details" />
           </div>
 
           <div class="form-group">
-            <label for="product_price">Prices</label>
+            <label for="product_price">ราคา</label>
             <input class="form-control" id="product_price" required [(ngModel)]="Products.product_price"
               name="product_price" />
           </div>
 
           <div class="form-group">
-            <label for="product_quantity">Quanity</label>
+            <label for="product_quantity">จำนวน</label>
             <input class="form-control" id="product_quantity" required [(ngModel)]="Products.product_quantity"
               name="product_quantity" />
           </div>
 
           <div class="text-center">
             <button class="btn btn-success" style="margin-right: 10px;margin-left: 10px;"
-              (click)="alertWithSuccess()">บันทึก</button>
+              (click)="alertWithSuccess()">บันทึกข้อมูล</button>
           </div>
 
         </div>

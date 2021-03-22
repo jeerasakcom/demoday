@@ -1,24 +1,8 @@
-<div>
-  <nav class="navbar navbar-expand navbar-dark bg-success">
-    <a class="navbar-brand">Rice Trade</a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a routerLink="list" class="nav-link">Products</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="add" class="nav-link">Add</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="lists" class="nav-link">Lists</a>
-      </li>
-    </div>
-  </nav>
+<div class="container mt-3">
 
+  <button type="button" class="btn btn-primary btn-lg" routerLink="add">เพิ่มสินค้า</button> &nbsp;&nbsp;
+  <button type="button" class="btn btn-primary btn-lg" routerLink="lists">รายการสินค้า</button>
 
-  <div class="container mt-3">
-
-    <router-outlet></router-outlet>
-
-  </div>
+  <router-outlet></router-outlet>
 
 </div>

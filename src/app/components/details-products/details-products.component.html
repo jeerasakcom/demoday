@@ -2,22 +2,22 @@
   <h4>Products</h4>
   <form>
     <div class="form-group">
-      <label for="name">Title</label>
+      <label for="name">ชื่อสินค้า</label>
       <input type="text" class="form-control" id="name" [(ngModel)]="currentProducts.product_name" name="name" />
     </div>
     <div class="form-group">
-      <label for="details">Title</label>
+      <label for="details">รายละเอียดสินค้า</label>
       <input type="text" class="form-control" id="details" [(ngModel)]="currentProducts.product_details"
         name="details" />
     </div>
 
     <div class="form-group">
-      <label for="price">Title</label>
+      <label for="price">ราคา</label>
       <input type="text" class="form-control" id="price" [(ngModel)]="currentProducts.product_price" name="price" />
     </div>
 
     <div class="form-group">
-      <label for="quantity">Title</label>
+      <label for="quantity">จำนวน</label>
       <input type="text" class="form-control" id="quantity" [(ngModel)]="currentProducts.product_quantity"
         name="quantity" />
     </div>
@@ -28,6 +28,8 @@
   <button class="badge badge-danger" (click)="deleteProducts()">
     Delete
   </button>
+
+  &nbsp;&nbsp;
 
   <button type="submit" class="badge badge-warning" (click)="updateProducts()">
     Update
